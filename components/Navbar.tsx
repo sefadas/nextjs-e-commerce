@@ -1,11 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import { SlBasket } from "react-icons/sl";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-blue-800 fixed z-50">
-      <div className="flex items-center justify-between h-24 px-4 container mx-auto text-white">
+    <div className="w-full bg-blue-800 fixed z-50 text-white">
+      <div className="flex items-center justify-between h-28 px-4 container mx-auto">
         <div className="sm:text-3xl md:text-5xl lg:text-6xl max-sm:text-3xl tracking-widest font-bold bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% bg-transparent">
           <Link href="/">SHOPPING</Link>
         </div>
@@ -29,6 +30,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Navbar Category Dropdown */}
+      <Dropdown />
     </div>
   );
 };
