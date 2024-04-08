@@ -1,11 +1,8 @@
-import Navbar from "../components/Navbar";
-import Products from "./pages/Products";
+import Products from "./Products";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-
       <Products />
     </div>
   );

@@ -233,7 +233,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 150,
     },
     {
-      id: 60,
+      id: 690,
       name: "Nike Downshifter 11",
       category: "Ayakkabı",
       imageUrl:
@@ -242,7 +242,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 60,
+      id: 680,
       name: "Nike Dunk Low Black FB8022-001",
       category: "Ayakkabı",
       imageUrl:
@@ -308,7 +308,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 25,
+      id: 255,
       name: "Pandy Unisex Sweatshirt",
       category: "Sweatshirt",
       imageUrl:
@@ -317,7 +317,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 26,
+      id: 266,
       name: "Puma Ferrari Race Hooded",
       category: "Sweatshirt",
       imageUrl:
@@ -326,7 +326,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 27,
+      id: 277,
       name: "SCUDERIA FERRARI 2023 TEAM REPLICA",
       category: "Sweatshirt",
       imageUrl:
@@ -344,7 +344,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 31,
+      id: 311,
       name: "Puma Kadın Favourite PWRFleece",
       category: "Sweatshirt",
       imageUrl:
@@ -365,7 +365,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
 
   [Category.WomenSweat]: [
     {
-      id: 19,
+      id: 1990,
       name: "JACK & JONES CORE",
       category: "Sweatshirt",
       imageUrl:
@@ -401,7 +401,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 23,
+      id: 2334,
       name: "PUMA SCUDERIA FERRARI",
       category: "Sweatshirt",
       imageUrl:
@@ -410,7 +410,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 24,
+      id: 2445,
       name: "PUMA SCUDERIA FERRARI Race",
       category: "Sweatshirt",
       imageUrl:
@@ -490,7 +490,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 34,
+      id: 3445,
       name: "Moshtashio Unisex Classic",
       category: "Sweatshirt",
       imageUrl:
@@ -503,7 +503,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
   [Category.WomenShoes]: [
     {
       // Ayakkabı
-      id: 1,
+      id: 11,
       name: "Nike Dunk Low Retro",
       category: "Erkek Ayakkabısı",
       imageUrl:
@@ -512,7 +512,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 2,
+      id: 222,
       name: "Nike Dunk Low Retro Black",
       category: "Ayakkabı",
       imageUrl:
@@ -521,7 +521,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 3,
+      id: 333,
       name: "Nike Court Vision",
       category: "Ayakkabı",
       imageUrl:
@@ -530,7 +530,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 4,
+      id: 444,
       name: "Nike Air Force",
       category: "Ayakkabı",
       imageUrl:
@@ -539,7 +539,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 5,
+      id: 555,
       name: "Nike Court Legacy",
       category: "Ayakkabı",
       imageUrl:
@@ -548,7 +548,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 6,
+      id: 666,
       name: "Nike Wmns Nike Court Legacy",
       category: "Ayakkabı",
       imageUrl:
@@ -557,7 +557,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 7,
+      id: 777,
       name: "Nike Air Huarache",
       category: "Ayakkabı",
       imageUrl:
@@ -566,7 +566,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 8,
+      id: 888,
       name: "Nike Air Huarache Run",
       category: "Ayakkabı",
       imageUrl:
@@ -575,7 +575,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 9,
+      id: 999,
       name: "adidas COURTBLOCK",
       category: "Ayakkabı",
       imageUrl:
@@ -584,7 +584,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 10,
+      id: 100,
       name: "adidas GRAND COURT",
       category: "Ayakkabı",
       imageUrl:
@@ -593,7 +593,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 299,
     },
     {
-      id: 11,
+      id: 111,
       name: "Nike Matte Black",
       category: "Ayakkabı",
       imageUrl:
@@ -602,7 +602,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 9,
     },
     {
-      id: 12,
+      id: 122,
       name: "adidas GRAND COURT",
       category: "Ayakkabı",
       imageUrl:
@@ -611,7 +611,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 95,
     },
     {
-      id: 13,
+      id: 133,
       name: "Nike Unisex",
       category: "Ayakkabı",
       imageUrl:
@@ -620,7 +620,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 14,
+      id: 144,
       name: "Converse Unisex",
       category: "Ayakkabı",
       imageUrl:
@@ -629,7 +629,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 99,
     },
     {
-      id: 59,
+      id: 599,
       name: "Puma 38111126 Club Unisex",
       category: "Ayakkabı",
       imageUrl:
@@ -645,15 +645,6 @@ const dataByCategory: Record<Category, IProductData[]> = {
         "https://productimages.hepsiburada.net/s/183/550/110000146711871.jpg/format:webp",
       price: 193,
       stock: 99,
-    },
-    {
-      id: 60,
-      name: "Nike Dunk Low Black FB8022-001",
-      category: "Ayakkabı",
-      imageUrl:
-        "https://productimages.hepsiburada.net/s/486/550/110000533379936.jpg/format:webp",
-      price: 93,
-      stock: 150,
     },
   ],
 
@@ -886,7 +877,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
       stock: 150,
     },
     {
-      id: 70,
+      id: 71,
       name: "Baby Rompers Long Sleeve",
       category: "Kids Dress",
       imageUrl:
@@ -914,6 +905,16 @@ export const getAllData = () =>
 
 export const getProductsByCategory = (category: Category) =>
   new Promise<IProductData[]>((resolve) => resolve(dataByCategory[category]));
+
+export const getProductById = (
+  id: number
+): Promise<IProductData | undefined> => {
+  return new Promise<IProductData | undefined>((resolve) => {
+    // Burada allData dizisinden veriyi id'ye göre filtreleyerek döndürebilirsiniz
+    const getById = allData.find((detail) => detail.id === id);
+    resolve(getById);
+  });
+};
 
 export const getProductData = () =>
   new Promise<IProductData[]>((resolve) =>

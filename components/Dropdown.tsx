@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
@@ -7,70 +6,30 @@ import Link from "next/link";
 
 const women: MenuProps["items"] = [
   {
-    label: (
-      <Link href="/pages/category/women/womenshoe" target="_blank">
-        Kadın Ayakkabı
-      </Link>
-    ),
+    label: <Link href="/category/women/womenshoe">Kadın Ayakkabı</Link>,
     key: "0",
   },
   {
-    label: (
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href="/pages/category/women/womenshoe"
-      >
-        Kadın Sweat
-      </Link>
-    ),
+    label: <Link href="/category/women/womensweat">Kadın Sweat</Link>,
     key: "1",
   },
 ];
 
 const men: MenuProps["items"] = [
   {
-    label: (
-      <Link
-        href="/pages/category/men/menshoes"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Erkek Ayakkabı
-      </Link>
-    ),
+    label: <Link href="/category/men/menshoes">Erkek Ayakkabı</Link>,
     key: "2",
   },
   {
-    label: (
-      <Link
-        href="/pages/category/men/mensweat"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Erkek Sweat
-      </Link>
-    ),
+    label: <Link href="/category/men/mensweat">Erkek Sweat</Link>,
     key: "3",
   },
 ];
 
 const kids: MenuProps["items"] = [
   {
-    label: (
-      <a href="/" target="_blank" rel="noopener noreferrer">
-        Çocuk Ayakkabı
-      </a>
-    ),
+    label: <Link href="/category/kidsdress">Çocuk</Link>,
     key: "4",
-  },
-  {
-    label: (
-      <a href="/" target="_blank" rel="noopener noreferrer">
-        Çocuk Sweat
-      </a>
-    ),
-    key: "5",
   },
 ];
 

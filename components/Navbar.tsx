@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { SlBasket } from "react-icons/sl";
@@ -20,7 +21,7 @@ const Navbar = () => {
             <Link href="/">Giriş Yap</Link>
           </div>
           <div className="flex items-center justify-center border-2 bg-gray-500 py-3 px-6 rounded-lg">
-            <Link href="/" className="flex gap-3 relative">
+            <Link href="/basket" className="flex gap-3 relative">
               <SlBasket size={20} />
               <span className="absolute bottom-3 bg-red-500 rounded-full w-5 h-5 px-1 text-sm left-3">
                 0
