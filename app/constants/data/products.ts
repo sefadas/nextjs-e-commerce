@@ -11,7 +11,7 @@ export enum Category {
 }
 
 const dataByCategory: Record<Category, IProductData[]> = {
-  UNİSEX_CAP: [
+  [Category.UnisexCap]: [
     {
       id: 35,
       name: "Under Armour Blitzing Adjustable",
@@ -104,7 +104,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
     },
   ],
 
-  MEN_SHOES: [
+  [Category.MenShoes]: [
     {
       // Ayakkabı
       id: 1,
@@ -252,7 +252,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
     },
   ],
 
-  MEN_SWEAT: [
+  [Category.MenSweat]: [
     {
       id: 15,
       name: "Jack & Jones JORVESTERBRO",
@@ -648,7 +648,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
     },
   ],
 
-  UNİSEX_TSHİRT: [
+  [Category.UnisexTshirt]: [
     {
       id: 45,
       name: "Puma Unisex Tee T-shirt",
@@ -777,7 +777,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
     },
   ],
 
-  KİDS_DRESS: [
+  [Category.KidsDress]: [
     {
       id: 21,
       name: "DeFacto Disney Mickey",
@@ -888,8 +888,6 @@ const dataByCategory: Record<Category, IProductData[]> = {
   ],
 };
 
-const menSweatData = dataByCategory[Category.MenSweat];
-
 const allData = [
   ...dataByCategory[Category.WomenShoes],
   ...dataByCategory[Category.MenShoes],
@@ -898,7 +896,7 @@ const allData = [
   ...dataByCategory[Category.MenSweat],
   ...dataByCategory[Category.WomenSweat],
   ...dataByCategory[Category.KidsDress],
-];
+].filter((d, i, arr) => arr.findIndex((v) => v.id === d.id) === i);
 
 export const getAllData = () =>
   new Promise<IProductData[]>((resolve) => resolve(allData));
@@ -906,19 +904,24 @@ export const getAllData = () =>
 export const getProductsByCategory = (category: Category) =>
   new Promise<IProductData[]>((resolve) => resolve(dataByCategory[category]));
 
-export const getProductById = (
-  id: number
-): Promise<IProductData | undefined> => {
-  return new Promise<IProductData | undefined>((resolve) => {
-    // Burada allData dizisinden veriyi id'ye göre filtreleyerek döndürebilirsiniz
-    const getById = allData.find((detail) => detail.id === id);
-    resolve(getById);
-  });
-};
+export const getDetail = (id: number): Promise<IProductData> =>
+  new Promise((resolve) => {
+    const product = allData.find((item) => item.id === id);
 
-export const getProductData = () =>
-  new Promise<IProductData[]>((resolve) =>
-    resolve([
-      // id,
-    ])
-  );
+    if (product) resolve(product);
+    else throw new Error(`${id} Ürün bulunamadı`);
+  });
+
+export const getProductById = (id: number) =>
+  new Promise<IProductData | undefined>((resolve) => {
+    const detail = allData.find((item) => item.id === id);
+    resolve(detail);
+  });
+
+export const fetchProductById = (
+  id: number
+): Promise<IProductData | undefined> =>
+  new Promise((resolve) => {
+    const products = allData.find((item) => item.id === id);
+    resolve(products);
+  });
