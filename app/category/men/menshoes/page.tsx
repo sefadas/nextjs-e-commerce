@@ -7,8 +7,11 @@ import Loading from "@/components/Loading";
 import { useQuery } from "@tanstack/react-query";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const MenShoe: React.FC = () => {
+  const { t } = useTranslation();
+
   const { data, isLoading } = useQuery({
     queryKey: ["MEN_SWEAT", Category.MenShoes],
     queryFn: () => getProductsByCategory(Category.MenShoes),
@@ -37,7 +40,7 @@ const MenShoe: React.FC = () => {
               <div className="h-8 pt-3">{shoes?.name}</div>
               <div className="font-bold text-lg pt-3">{shoes?.price} €</div>
               <div className="font-bold text-lg pb-2">
-                Stock: {shoes?.stock} - pieces left{" "}
+                {t("stock")} {shoes?.stock}
               </div>
               <div className="px-4 w-full pt-2">
                 <Button />

@@ -888,7 +888,7 @@ const dataByCategory: Record<Category, IProductData[]> = {
   ],
 };
 
-const allData = [
+export const allData = [
   ...dataByCategory[Category.WomenShoes],
   ...dataByCategory[Category.MenShoes],
   ...dataByCategory[Category.UnisexCap],
