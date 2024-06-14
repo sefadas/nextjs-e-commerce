@@ -43,7 +43,7 @@ const MenSweat: React.FC = () => {
                 {t("stock")} {mensweat?.stock}
               </div>
               <div className="px-4 w-full pt-2">
-                <Button />
+                <Button>{t("detail")}</Button>
               </div>
             </div>
           </div>

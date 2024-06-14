@@ -27,15 +27,18 @@ const Basket: React.FC = () => {
       {cart.items.length === 0 ? (
         <p>{t("empty")}</p>
       ) : (
-        <div>
-          <div className="mb-8">
+        <div className="container mx-auto">
+          <div className="mb-8 flex flex-col md:float-left sm:float-none">
             {cart.items.map((item) => (
-              <div key={item.id} className="flex items-center mb-4">
-                <div className="flex gap-4">
-                  <div className="">
+              <div
+                key={item.id}
+                className="flex items-center mb-4 border-b pb-3"
+              >
+                <div className="flex gap-4 items-center ">
+                  <div>
                     <img className="w-32" src={item.imageUrl} alt="" />
                   </div>
-                  <div>
+                  <div className="w-48">
                     <p>{item.name}</p>
                     <p>
                       {t("price")} {item.price} $
@@ -43,11 +46,11 @@ const Basket: React.FC = () => {
                     <p>
                       {t("qty")} {item.quantity}{" "}
                     </p>
-                    <div className="pt-4 w-44">
-                      <Button onClick={() => handleRemoveItem(item.id)}>
-                        {t("remove")}
-                      </Button>
-                    </div>
+                  </div>
+                  <div className="w-36 flex float-right">
+                    <Button onClick={() => handleRemoveItem(item.id)}>
+                      {t("remove")}
+                    </Button>
                   </div>
                 </div>
               </div>
